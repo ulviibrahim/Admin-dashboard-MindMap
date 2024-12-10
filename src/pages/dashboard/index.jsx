@@ -21,7 +21,7 @@ import SocialMedia from "../../components/social-media/social-home";
 import ContactUs from '../../components/contact-us/contact-home';
 import AboutPages from '../../components/about-page/about-home/Index';
 import Logo from '../../components/Logo/logo-home/index';
-
+import "../../assets/pages/home.scss"
 // Navigation Configuration
 const NAVIGATION = [
   { kind: "header", title: "MyDashboard" },
@@ -105,7 +105,7 @@ export default function DashboardPage({ window }) {
     "/logos": <Logo />,
   };
 
-  const renderContent = routeComponents[currentRoute] || <div>Page Not Found</div>;
+  const renderContent = routeComponents[currentRoute] || <div className="bord">Welcome Dashboard</div>;
 
   return (
     <AppProvider
