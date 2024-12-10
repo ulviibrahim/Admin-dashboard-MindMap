@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import {
   TextField,
@@ -37,7 +37,7 @@ const LoginPage = () => {
     resolver: yupResolver(schema), // Yup validation
   });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data) => {
     navigate("/dashboard");
   };
 
