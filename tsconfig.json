@@ -1,0 +1,10 @@
+{ 
+  "compilerOptions": {
+  "allowJs": true,  // .js və .jsx fayllarını daxil etməyə icazə verir
+  "checkJs": true  }, // .js və .jsx fayllarının yoxlanmasını təmin edir
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
