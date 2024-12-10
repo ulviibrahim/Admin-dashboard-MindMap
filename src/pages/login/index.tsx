@@ -37,7 +37,7 @@ const LoginPage = () => {
     resolver: yupResolver(schema), // Yup validation
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
     navigate("/dashboard");
   };
 
